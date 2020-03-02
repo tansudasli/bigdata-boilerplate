@@ -15,11 +15,11 @@ to simulate on-premice on cloud, **leveraged GCP IaaS**!
 - [ ] spark
 - [ ] airflow (to coordinate some file related tasks)
 
-### High Level Architecture - /product-analytics
+### High Level Architecture -
 
 ![Image](doc/big-data-architecture.png)
 
-#### Note
+#### Notes
 - on cloud, you have opportuniets to decrease _operational costs_ w/o using IaaS. 
 - only HDFS used in Hadoop. Distributed computing should be done by spark or beam. Not Hadoop's map/reduce
 - consider also Mesosphere on your DC to manage these big data stack.
