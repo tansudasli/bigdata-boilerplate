@@ -1,26 +1,20 @@
-# bigdata-boilerplate
+# e-invoice platform
 
-this boilerplate is prepared for some of the real-case scenarios such as, clients sends files to your side, then you use these files for distributed computing (some signing, validation etc. w. spark or beam), web-app for search and some state managements (approve/reject records)
+this boilerplate is prepared for e-invoice platform's POC of critical parts on GCP.
 
-to simulate on-premice on cloud, **leveraged GCP IaaS**!
+**POC scope**
+- [x] sample invoice files-2-gcp
+- [x] handle distributed computing on beam
+    - [x] basic validations
+    - [x] persist to datastore
+- [ ] APIs w/ spring+gradle
+- [ ] web-app prototype w/ skecth
+- [ ] web-app w/ spring+gradle
 
-- [x] production ready (full distributed)
-- [x] on-premice (creates servers on GCP so uses GCP CLI -> replace w/ _ansible_ need)
-- [ ] some network adjustments missing (seperate subnet masks, firewall configs, additional DNS servers, switches etc...)
-- [ ] central zookeeper management (questionable)
-- [ ] hdfs
-- [ ] hbase + zookeeper
-- [ ] kafka + zookeeper
-- [ ] beam
-- [ ] spark
-- [ ] airflow (to coordinate some file related tasks)
+then prototype, then MVP should be done.
 
 ### High Level Architecture -
 
-![Image](doc/big-data-architecture.png)
+![Image](doc/e-invoice-serverless-architecture.png)
 
-#### Notes
-- on cloud, you have opportuniets to decrease _operational costs_ w/o using IaaS. 
-- only HDFS used in Hadoop. Distributed computing should be done by spark or beam. Not Hadoop's map/reduce
-- consider also Mesosphere on your DC to manage these big data stack.
 
