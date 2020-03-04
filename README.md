@@ -12,7 +12,7 @@ this boilerplate is prepared for e-invoice platform's POC of critical parts on G
 - [ ] web-app prototype w/ skecth
 - [ ] web-app w/ spring+gradle
 
-then prototype, then MVP should be done.
+then _prototype_, then do _MVP_
 
 ### High Level Architecture - e-invoice
 
